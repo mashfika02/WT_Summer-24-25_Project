@@ -1,0 +1,21 @@
+:root{--bg:#f6f5fb;--accent:#6b46c1;--muted:#6b7280;--card:#ffffff}
+*{box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
+body{margin:0;background:var(--bg);color:#0f172a}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:var(--card);box-shadow:0 1px 3px rgba(15,23,42,.06)}
+.brand{display:flex;align-items:center;gap:12px}
+.logo-img{width:44px;height:44px;object-fit:contain}
+.brand-title{font-weight:700;color:var(--accent)}
+.top-actions{display:flex;gap:12px;align-items:center}
+.btn{background:var(--accent);color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+.layout{display:flex;gap:20px;padding:20px}
+.sidebar{width:220px}
+.sidebar nav ul{list-style:none;padding:0;margin:0;background:var(--card);border-radius:8px;padding:12px}
+.sidebar nav li{margin:8px 0}
+.sidebar nav a{color:var(--muted);text-decoration:none;padding:8px 10px;display:block;border-radius:6px}
+.sidebar nav a:hover{background:#f4f1ff;color:var(--accent)}
+.content{flex:1}
+.cards{display:flex;gap:12px;margin-bottom:16px}
+.card{background:var(--card);padding:16px;border-radius:8px;flex:1;box-shadow:0 1px 2px rgba(2,6,23,.04)}
+.stat{font-size:1.6rem;font-weight:700;margin:6px 0;color:var(--accent)}
+.panel{background:var(--card);padding:14px;border-radius:8px;margin-bottom:12px}
+.site-footer{text-align:center;padding:12px;color:var(--muted);font-size:0.9rem}
