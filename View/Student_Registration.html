@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration</title>
+<link rel="stylesheet" href="http://localhost/School%20Management/CSS/Student_Registration.css">
+
+</head>
+<body>
+  <div class="form">
+
+    <h2>Student Registration</h2>
+    
+    <form action="http://localhost/School%20Management/PHP/Student_Registration.php" method="POST">
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name">
+
+      <label for="father_name">Father's Name</label>
+      <input type="text" id="father_name" name="father_name">
+
+      <label for="mother_name">Mother's Name</label>
+      <input type="text" id="mother_name" name="mother_name">
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob">
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender">
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="class">Class</label>
+        <select id="class" name="class">
+            <option value="">Select Class</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+
+      <label for="phone">Guardian Phone</label>
+      <input type="text" id="phone" name="phone">
+
+      <label for="email">Email (Optional)</label>
+      <input type="email" id="email" name="email">
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address">
+
+      <label for="username">Username / Student ID</label>
+      <input type="text" id="username" name="username">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password">
+
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" id="confirm_password" name="confirm_password">
+
+      <button type="submit">Register</button>
+      
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manage Students</title>
+  <link rel="stylesheet" href="../CSS/Principal_Dashboard.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <a href="Principal_Dashboard.html" class="logo-link"><img src="../images/logo.png" class="logo-img" alt="Logo"></a>
+      <span class="brand-title">Manage Students</span>
+    </div>
+    <div class="top-actions">
+      <button class="btn" onclick="location.href='Principal_Dashboard.html'">Back</button>
+    </div>
+  </header>
+
+  <main style="max-width:1100px;margin:18px auto;padding:18px">
+    <section class="panel">
+      <h2>Add Student</h2>
+      <form id="studentForm">
+        <label>Full Name</label>
+        <input type="text" id="s_name" required style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid #ddd">
+        <label>Class</label>
+        <input type="text" id="s_class" style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid #ddd">
+        <label>Guardian Phone</label>
+        <input type="text" id="s_phone" style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid #ddd">
+        <button type="submit" class="btn" style="margin-top:8px">Add Student</button>
+      </form>
+    </section>
+
+    <section class="panel" style="margin-top:12px">
+      <h2>Existing Students</h2>
+      <table id="studentTable" style="width:100%;border-collapse:collapse">
+        <thead>
+          <tr style="text-align:left;border-bottom:1px solid #eee">
+            <th>Name</th><th>Class</th><th>Phone</th><th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="../JS/admin_manage.js"></script>
+  <script>initStudents()</script>
+</body>
+</html>

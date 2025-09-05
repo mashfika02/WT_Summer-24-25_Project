@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="../CSS/Teacher_Dashboard.css">
+    <script>
+        function goTo(section){
+            const el = document.getElementById(section);
+            if(el) el.scrollIntoView({behavior:'smooth'});
+        }
+    </script>
+ </head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <a href="../View/Teacher_Dashboard.html" class="logo-link">
+                <img src="../images/logo.jpg" alt="Logo" class="logo-img">
+            </a>
+            <span class="brand-title">School Portal - Teacher</span>
+        </div>
+        <div class="top-actions">
+            <span class="greeting">Hello, Teacher</span>
+            <button class="btn" onclick="location.href='../View/Login.html'">Log out</button>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="goTo('classes')">My Classes</a></li>
+                    <li><a href="#" onclick="goTo('assignments')">Assignments</a></li>
+                    <li><a href="#" onclick="goTo('grades')">Grades</a></li>
+                    <li><a href="#" onclick="goTo('exam')">Exams</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <h1>My Dashboard</h1>
+
+            <section class="panel" id="classes">
+                <h2>Classes</h2>
+                <ul>
+                    <li>Grade 10 - Science</li>
+                    <li>Grade 11 - Chemistry</li>
+                </ul>
+            </section>
+
+            <section class="panel" id="assignments">
+                <h2>Assignments</h2>
+                <button class="btn small">Create Assignment</button>
+                <ul>
+                    <li>Chapter 5 Homework - due 2025-09-20</li>
+                    <li>Lab Report - due 2025-09-27</li>
+                </ul>
+            </section>
+
+            <section class="panel" id="grades">
+                <h2>Grades</h2>
+                <p>Upload grades or view student submissions.</p>
+            </section>
+
+            <section class="panel" id="exam">
+                <h2>Exams</h2>
+                <p>Schedule exams and add questions.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">© School Management System</footer>
+</body>
+</html>

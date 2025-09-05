@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../CSS/Student_Dashboard.css">
+ </head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <a href="../View/Student_Dashboard.html" class="logo-link">
+                <img src="../images/logo.jpg" alt="Logo" class="logo-img">
+            </a>
+            <span class="brand-title">School Portal - Student</span>
+        </div>
+        <div class="top-actions">
+            <span class="greeting">Hi, Student</span>
+            <button class="btn" onclick="location.href='../View/Login.html'">Log out</button>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="left-ops">
+            <div class="ops-card">
+                <h3>Quick Actions</h3>
+                <button class="op-btn">Submit Assignment</button>
+                <button class="op-btn">Submit Homework</button>
+                <button class="op-btn">View Exam Schedule</button>
+                <button class="op-btn">View Grades</button>
+                <button class="op-btn">Messages</button>
+                <button class="op-btn">Profile</button>
+            </div>
+            <div class="ops-card small">
+                <h4>Notifications</h4>
+                <p>No unread messages</p>
+            </div>
+        </aside>
+
+        <main class="center-routine">
+            <h1>Class Routine</h1>
+
+            <section class="timetable panel">
+                <div class="tt-header">
+                    <div class="tt-cell time-col">Time</div>
+                    <div class="tt-cell">Monday</div>
+                    <div class="tt-cell">Tuesday</div>
+                    <div class="tt-cell">Wednesday</div>
+                    <div class="tt-cell">Thursday</div>
+                    <div class="tt-cell">Friday</div>
+                </div>
+
+                <!-- Sample periods: adjust as needed -->
+                <div class="tt-row">
+                    <div class="tt-cell time-col">08:00 - 08:45</div>
+                    <div class="tt-cell">Math</div>
+                    <div class="tt-cell">English</div>
+                    <div class="tt-cell">Physics</div>
+                    <div class="tt-cell">Chemistry</div>
+                    <div class="tt-cell">Biology</div>
+                </div>
+
+                <div class="tt-row">
+                    <div class="tt-cell time-col">08:50 - 09:35</div>
+                    <div class="tt-cell">Bangla</div>
+                    <div class="tt-cell">Math</div>
+                    <div class="tt-cell">Computer</div>
+                    <div class="tt-cell">English</div>
+                    <div class="tt-cell">History</div>
+                </div>
+
+                <div class="tt-row">
+                    <div class="tt-cell time-col">09:50 - 10:35</div>
+                    <div class="tt-cell">Science Lab</div>
+                    <div class="tt-cell">ICT</div>
+                    <div class="tt-cell">Math</div>
+                    <div class="tt-cell">Physical Ed.</div>
+                    <div class="tt-cell">Arts</div>
+                </div>
+
+                <div class="tt-row">
+                    <div class="tt-cell time-col">10:45 - 11:30</div>
+                    <div class="tt-cell">Geography</div>
+                    <div class="tt-cell">Chemistry</div>
+                    <div class="tt-cell">English</div>
+                    <div class="tt-cell">Math</div>
+                    <div class="tt-cell">Computer Lab</div>
+                </div>
+
+                <div class="tt-row">
+                    <div class="tt-cell time-col">11:40 - 12:25</div>
+                    <div class="tt-cell">Religion</div>
+                    <div class="tt-cell">Biology</div>
+                    <div class="tt-cell">History</div>
+                    <div class="tt-cell">Bangla</div>
+                    <div class="tt-cell">Free Period</div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">© School Management System</footer>
+</body>
+</html>
