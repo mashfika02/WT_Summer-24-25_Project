@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Principal Dashboard</title>
     <link rel="stylesheet" href="../CSS/Principal_Dashboard.css">
- </head>
+</head>
+
 <body>
     <header class="topbar">
-        <div class="brand">
-            <a href="../View/Principal_Dashboard.html" class="logo-link">
+        <div class="logo">
+            <a href="../View/Principal_Dashboard.html">
                 <img src="../images/logo.png" alt="Logo" class="logo-img">
             </a>
-            <span class="brand-title">School Portal - Principal</span>
+            <span class="title">DASHBOARD - PRINCIPAL</span>
         </div>
-        <div class="top-actions">
-            <span class="greeting">Welcome, Principal</span>
-            <button class="btn" onclick="location.href='../View/Login.html'">Log out</button>
+
+        <div class="action">
+            <span class="msg">Welcome, Principal</span>
+            <button class="btn" onclick="location.href='../PHP/Login.php'">Log out</button>
         </div>
     </header>
 
     <div class="layout">
         <aside class="sidebar">
-            <nav>
-                <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="Manage_Teacher.html">Manage Teachers</a></li>
-                    <li><a href="Manage_Student.html">Manage Students</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#exams">Exams</a></li>
-                    <li><a href="#assignments">Assignments</a></li>
-                    <li><a href="#reports">Reports</a></li>
-                </ul>
-            </nav>
+            <div class="menu-links">
+                <div class="menu-item"><a href="../View/Principal_Dashboard.html">Dashboard</a></div>
+                <div class="menu-item"><a href="../PHP/Teacher_Registration.php">Add Teachers</a></div>
+                <div class="menu-item"><a href="">Add Students</a></div>  
+                <div class="menu-item"><a href="">Courses</a></div>
+                <div class="menu-item"><a href="">Exams</a></div>
+                <div class="menu-item"><a href="">Assignments</a></div>
+                <div class="menu-item"><a href="">Update Password</a></div>
+            </div>
         </aside>
 
         <main class="content">
@@ -47,8 +46,8 @@
                     <p class="stat">842</p>
                 </div>
                 <div class="card">
-                    <h3>Active Courses</h3>
-                    <p class="stat">36</p>
+                    <h3>Active Classes</h3>
+                    <p class="stat">3</p>
                 </div>
             </div>
 
@@ -67,7 +66,5 @@
             </section>
         </main>
     </div>
-
-    <footer class="site-footer">© School Management System</footer>
 </body>
 </html>

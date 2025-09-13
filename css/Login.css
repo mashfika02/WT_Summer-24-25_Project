@@ -9,24 +9,17 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: none;
+  background: url(../images/pic3.jpg);
   font-family: Arial, sans-serif;
 }
 
-.container {
-  background: #fff;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 25%;
-}
-
 .login {
+  display: flex;
   width: 25%;
-  border: 1px solid #ccc;
+  background: #f6edfc;
+  border: 1px solid #d8b0ee;
   border-radius: 12px;
   padding: 30px;
-  display: flex;
   flex-direction: column;
   gap: 15px;
 }
@@ -55,18 +48,25 @@ body {
 }
 
 .logo {
+  display: flex;
   width: 100px;
   height: 100px;
   margin-right: 10px;
 }
 
 .title1 {
+  display: flex;
+  padding-top: 14px;
+  padding-left: 4px;
   font-size: 24px;
   font-weight: bold;
   color: #422b93;
 }
 
 .title2 {
+  display: flex;
+  padding-top: 5px;
+  padding-left: 4px;
   font-size: 17px;
   font-weight: bold;
   color: #256176;

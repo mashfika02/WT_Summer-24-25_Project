@@ -1,17 +1,100 @@
-:root{--bg:#f6f5fb;--accent:#6b46c1;--card:#ffffff;--muted:#475569}
-*{box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
-body{margin:0;background:var(--bg);color:#0b1220}
-.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:var(--card);box-shadow:0 1px 3px rgba(11,18,32,.06)}
-.brand{display:flex;align-items:center;gap:12px}
-.logo-img{width:44px;height:44px;object-fit:contain}
-.brand-title{font-weight:700;color:var(--accent)}
-.layout{display:flex;gap:20px;padding:20px}
-.sidebar{width:200px}
-.sidebar nav ul{list-style:none;padding:0;margin:0;background:var(--card);border-radius:8px;padding:12px}
-.sidebar nav a{color:var(--muted);text-decoration:none;display:block;padding:8px;border-radius:6px}
-.sidebar nav a:hover{background:#f4f1ff;color:var(--accent)}
-.content{flex:1}
-.panel{background:var(--card);padding:14px;border-radius:8px;margin-bottom:12px;box-shadow:0 1px 2px rgba(2,6,23,.04)}
-.btn{background:var(--accent);color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
-.btn.small{padding:6px 10px;font-size:0.9rem}
-.site-footer{text-align:center;padding:12px;color:var(--muted);font-size:0.9rem}
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f6f5fb;
+    color: #0b1220;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(11, 18, 32, .06);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.brand-title {
+    font-weight: 700;
+    color: #6b46c1;
+}
+
+.layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 200px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 12px;
+    margin: 0;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.sidebar nav a {
+    color: #475569;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.sidebar nav a:hover {
+    background: #f4f1ff;
+    color: #6b46c1;
+}
+
+.content {
+    flex: 1;
+}
+
+.panel {
+    background: #ffffff;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 2px rgba(2, 6, 23, .04);
+}
+
+.btn {
+    background: #6b46c1;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn.small {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 12px;
+    color: #475569;
+    font-size: 0.9rem;
+}
